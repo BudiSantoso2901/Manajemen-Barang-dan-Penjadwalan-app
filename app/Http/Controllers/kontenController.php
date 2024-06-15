@@ -25,7 +25,7 @@ class kontenController extends Controller
             ->with(['barangs', 'users'])
             ->get();
 
-        return view('User.jadwal', compact('alldatajadwal'));
+        return view('User.Jadwal', compact('alldatajadwal'));
     }
 
     public function inputJadwal()
@@ -167,7 +167,7 @@ class kontenController extends Controller
     public function liputanVIew()
     {
         $lpt['alldataliputan'] = liputan::all();
-        return view('User.liputan', $lpt);
+        return view('User.Liputan', $lpt);
     }
     public function anggotaVIew()
     {
