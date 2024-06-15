@@ -61,7 +61,7 @@
                                     <div class="flex-shrink-0 me-3">
                                         <div class="avatar avatar-online">
                                             @if (auth()->user() && auth()->user()->profile_picture)
-                                                <img src="{{ asset('storage/' . auth()->user()->profile_picture) }}"
+                                                <img src="{{ Storage::url(auth()->user()->profile_picture) }}"
                                                     alt="Foto Profil" class="w-px-40 h-auto rounded-circle">
                                             @else
                                                 <img src="{{ asset('images/user.png') }}" alt

@@ -154,7 +154,7 @@
                             <td class="px-3 text-nowrap text-center">{{ $jdw->waktu }}</td>
                             <td class="px-3 text-nowrap text-center">
                                 @if ($jdw->kondisi_sebelum)
-                                    <img src="{{ asset('storage/videos/' . $jdw->kondisi_sebelum) }}"
+                                    <img src="{{ Storage::url('videos/' . $jdw->kondisi_sebelum) }}"
                                         alt="Kondisi Sebelum Video" style="width: 100px">
                                 @else
                                     <p>Tidak ada Gambar</p>
@@ -162,26 +162,12 @@
                             </td>
                             <td class="px-3 text-nowrap text-center">
                                 @if ($jdw->kondisi_sesudah)
-                                    <img src="{{ asset('storage/videos/' . $jdw->kondisi_sesudah) }}"
-                                        alt="Kondisi Sebelum Video" style="width: 100px">
+                                    <img src="{{ Storage::url('videos/' . $jdw->kondisi_sesudah) }}"
+                                        alt="Kondisi Sesudah Video" style="width: 100px">
                                 @else
                                     <p>Tidak ada Gambar</p>
                                 @endif
                             </td>
-
-                            {{-- <td class="px-3 text-nowrap text-center">
-                                <div class="dropdown">
-                                    <button type="button" name="edit"
-                                        class="btn btn-outline-light text-secondary fs-5 mx-1 dropdown-toggle hide-arrow"
-                                        data-bs-toggle="dropdown">
-                                        <i class="bi bi-filetype-csv"></i>
-                                    </button>
-                                    <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="{{ route('export-jadwal') }}"><i
-                                                class="bi bi-filetype-csv"></i> Export</a>
-                                    </div>
-                                </div>
-                            </td> --}}
                         </tr>
                     @empty
                     @endforelse
