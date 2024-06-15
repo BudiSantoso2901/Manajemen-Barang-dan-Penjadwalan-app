@@ -25,7 +25,7 @@ class kontenController extends Controller
             ->with(['barangs', 'users'])
             ->get();
 
-        return view('user.jadwal', compact('alldatajadwal'));
+        return view('User.jadwal', compact('alldatajadwal'));
     }
 
     public function inputJadwal()
@@ -95,7 +95,7 @@ class kontenController extends Controller
     public function status_view($id)
     {
         $jdw = jadwal::findOrFail($id);
-        return view('user.form.status', compact('jdw'));
+        return view('User.form.status', compact('jdw'));
     }
     public function edit_status(Request $request, $id)
     {
@@ -167,17 +167,17 @@ class kontenController extends Controller
     public function liputanVIew()
     {
         $lpt['alldataliputan'] = liputan::all();
-        return view('user.liputan', $lpt);
+        return view('User.liputan', $lpt);
     }
     public function anggotaVIew()
     {
         $agt['allDataUser'] = User::all();
-        return view('user.anggota', $agt);
+        return view('User.anggota', $agt);
     }
     public function barangVIew()
     {
         $brg['alldataBarang'] = barang::all();
-        return view('user.barang', $brg);
+        return view('User.barang', $brg);
     }
     public function dashVIew()
     {
@@ -186,7 +186,7 @@ class kontenController extends Controller
     //fitur Konten
     public function inpuLiputanView()
     {
-        return view('Form.inputLiputan');
+        return view('User.form.liputan');
     }
     public function StoreLiputan(Request $request)
     {
