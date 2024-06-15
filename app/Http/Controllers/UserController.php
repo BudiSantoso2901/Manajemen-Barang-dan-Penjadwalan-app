@@ -42,7 +42,7 @@ class UserController extends Controller
 
     public function registerSuccess($userID)
     {
-        return view("user/register_success", [
+        return view("Auth/register_success", [
             "userID" => $userID,
         ]);
     }

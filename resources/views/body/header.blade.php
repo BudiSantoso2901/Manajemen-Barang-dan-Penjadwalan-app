@@ -14,31 +14,31 @@
                     <a class="nav-link" href="{{ url('/') }}">Dashboard</a>
                 </li>
                 @if (Auth::check() && Auth::user()->type == 1)
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ url('Admin/view/jadwal') }}">Jadwal</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ url('Admin/view/liputan') }}">Liputan</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ url('Admin/view/barang') }}">Barang</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ url('Admin/view/anggota') }}">Anggota Tim</a>
-                </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url('Admin/view/jadwal') }}">Jadwal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url('Admin/view/liputan') }}">Liputan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url('Admin/view/barang') }}">Barang</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url('Admin/view/anggota') }}">Anggota Tim</a>
+                    </li>
                 @elseif (Auth::check() && Auth::user()->type == 0)
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ url('user/jadwal') }}">Jadwal</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ url('user/liputan') }}">Liputan</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ url('user/barang') }}">Barang</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ url('user/anggota') }}">Anggota Tim</a>
-                </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url('user/jadwal') }}">Jadwal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url('user/liputan') }}">Liputan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url('user/barang') }}">Barang</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url('user/anggota') }}">Anggota Tim</a>
+                    </li>
                 @else
                 @endif
             </ul>
@@ -49,8 +49,9 @@
                 </ul>
             @else
                 <!-- User -->
-                <div class="btn-group">
-                    <button type="button" class="btn btn-outline-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                {{-- <div class="btn-group">
+                    <button type="button" class="btn btn-outline-light dropdown-toggle" data-bs-toggle="dropdown"
+                        aria-expanded="false">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-person-circle" viewBox="0 0 16 16">
                             <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"></path>
@@ -60,29 +61,38 @@
                         </svg>
                         Profile
                     </button>
-                    {{-- <button type="button" class="btn btn-info dropdown-toggle rounded-circle" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        Profile
-                    </button> --}}
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="#">{{ Auth::user()->nama }}</a></li>
                         <li><a class="dropdown-item" href="{{ route('profile.view') }}">Profile</a></li>
                         <li><a class="dropdown-item" href="{{ url('user/process-logout') }}">Logout</a></li>
                     </ul>
                 </div>
-                {{-- <li class="nav-item">
+                <img src="{{ asset('storage/' . auth()->user()->profile_picture) }}" class="rounded-circle" style="width: 100px;"
+                    alt="Avatar" /> --}}
+                <li class="nav-item navbar-dropdown dropdown-user dropdown">
                     <a class="nav-link dropdown-toggle hide-arrow" href="" data-bs-toggle="dropdown">
                         <div class="avatar avatar-online">
-                            <img src="" alt class="w-px-40 h-auto rounded-circle " />
-                            <i class="bi bi-person-circle"></i>
+                            <img src="{{ asset('images/user.png') }}" alt class="w-px-40 h-auto rounded-circle" />
                         </div>
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end">
                         <li>
                             <a class="dropdown-item" href="#">
                                 <div class="d-flex">
+                                    <div class="flex-shrink-0 me-3">
+                                        <div class="avatar avatar-online">
+                                            @if (auth()->user() && auth()->user()->profile_picture)
+                                                <img src="{{ asset('storage/' . auth()->user()->profile_picture) }}"
+                                                    alt="Foto Profil" class="w-px-40 h-auto rounded-circle">
+                                            @else
+                                                <img src="{{ asset('images/user.png') }}" alt
+                                                    class="w-px-40 h-auto rounded-circle" />
+                                            @endif
+                                        </div>
+                                    </div>
                                     <div class="flex-grow-1">
                                         <span class="fw-medium d-block">{{ Auth::user()->nama }}</span>
+                                        <small class="text-muted">-</small>
                                     </div>
                                 </div>
                             </a>
@@ -106,7 +116,7 @@
                             </a>
                         </li>
                     </ul>
-                </li> --}}
+                </li>
         </div>
         @endif
     </div>
