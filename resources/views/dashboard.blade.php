@@ -1,4 +1,4 @@
-@extends('_Layouts.main')
+@extends('_layouts.main')
 @section('content')
     <div class="content-wrapper">
         <!-- Content -->
