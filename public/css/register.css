@@ -1,0 +1,442 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: visible;
+}
+
+.register-lands {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1207px;
+    width: 100%;
+    padding: 0 20px;
+    /* Tambahkan padding horizontal untuk menjaga tampilan di tengah */
+}
+
+.register-lands .div {
+    background-color: #ffffff;
+    max-width: 100%;
+    /* Membatasi lebar maksimum ke 100% lebar layar */
+    height: auto;
+    /* Menggunakan height: auto agar tinggi disesuaikan dengan kontennya */
+    position: relative;
+}
+
+.register-lands .overlap-group {
+    position: absolute;
+    width: 1207px;
+    height: 794px;
+    top: -240px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #f2f3f6;
+    border-radius: 50px;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+.register-lands .mcp-logo {
+    width: 200px;
+    height: 133px;
+    object-fit: cover;
+    position: absolute;
+    top: -370px;
+    transform: translateX(-60%);
+}
+
+.register-lands .button {
+    display: flex;
+    flex-direction: column;
+    /* Stack child elements vertically */
+    align-items: center;
+    position: absolute;
+    top: 550px;
+    /* Adjust the top position as needed */
+    left: 243px;
+    /* Adjust the left position as needed */
+    width: 720px;
+}
+
+.register-lands .button:active {
+    opacity: 0.7;
+}
+
+.register-lands .button button {
+    transition: background-color 0.3s, color 0.3s;
+    display: inline-block;
+    width: 720px;
+    /* Set the width to 720px */
+    height: 46px;
+    /* Set the height to 46px */
+    background-color: #365895;
+    border-radius: 4px;
+    color: #fefefefe;
+    font-family: "Open Sans-Bold", Helvetica;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: normal;
+    border: none;
+    cursor: pointer;
+    margin-top: 0px;
+    /* Adjust the top margin as needed */
+}
+
+.register-lands .button button:hover {
+    background-color: #243a63;
+    /* Warna latar belakang saat tombol dihover */
+    color: #fff;
+    /* Warna teks saat tombol dihover */
+}
+
+.register-lands .text-wrapper {
+    position: relative;
+    width: fit-content;
+    margin-top: -0.5px;
+    font-family: "Open Sans-Bold", Helvetica;
+    font-weight: 700;
+    color: #fefefefe;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: normal;
+    all: unset;
+    box-sizing: border-box;
+}
+
+.register-lands .text-wrapper-2 {
+    position: absolute;
+    width: 148px;
+    top: 7px;
+    left: 529px;
+    font-family: "Open Sans-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 36px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.register-lands .input-field {
+    height: 20px;
+    top: 110px;
+    left: 120px;
+    position: absolute;
+    width: 446px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: 1px solid;
+    border-color: #cfd4dc;
+    padding: 10px;
+    /* Tambahkan padding untuk memberikan ruang di dalam input fields */
+    font-family: "Open Sans-Regular", Helvetica;
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.register-lands .text-wrapper-3 {
+    position: absolute;
+    font-family: "Open Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+    top: 79px;
+    left: 120px;
+    /* Atur left sesuai kebutuhan */
+}
+
+.register-lands .input-field-2 {
+    height: 20px;
+    top: 111px;
+    left: 640px;
+    position: absolute;
+    width: 446px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: 1px solid;
+    border-color: #cfd4dc;
+    padding: 10px;
+    /* Tambahkan padding untuk memberikan ruang di dalam input fields */
+    font-family: "Open Sans-Regular", Helvetica;
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.register-lands .text-wrapper-4 {
+    position: absolute;
+    font-family: "Open Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+    top: 80px;
+    /* Sesuaikan top agar sejajar dengan input-field-2 */
+    left: 640px;
+    /* Sesuaikan left agar sejajar dengan input-field-2 */
+}
+
+/* Existing styles... */
+
+.register-lands .input-field-9 {
+    height: 20px;
+    top: 188px;
+    /* Adjust the top position to avoid overlapping NIM */
+    left: 120px;
+    position: absolute;
+    width: 446px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: 1px solid;
+    border-color: #cfd4dc;
+    padding: 10px;
+    /* Tambahkan padding untuk memberikan ruang di dalam input fields */
+    font-family: "Open Sans-Regular", Helvetica;
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.register-lands .text-wrapper-11 {
+    position: absolute;
+    font-family: "Open Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+    top: 160px;
+    /* Adjust the top position to match "NIM" input */
+    left: 120px;
+}
+
+.register-lands .input-field-3 {
+    height: 20px;
+    top: 265px;
+    /* Adjust the top position to match "Jurusan/Kelas" */
+    left: 120px;
+    position: absolute;
+    width: 446px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: 1px solid;
+    border-color: #cfd4dc;
+    padding: 10px;
+    /* Tambahkan padding untuk memberikan ruang di dalam input fields */
+    font-family: "Open Sans-Regular", Helvetica;
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.register-lands .text-wrapper-5 {
+    position: absolute;
+    font-family: "Open Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+    top: 237px;
+    /* Adjust the top position to match "Jurusan/Kelas" */
+    left: 120px;
+}
+
+.register-lands .input-field-4 {
+    height: 100px;
+    top: 416px;
+    /* Adjust the top position to move it below "Jurusan/Kelas" */
+    left: 120px;
+    position: absolute;
+    width: 965px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: 1px solid;
+    border-color: #cfd4dc;
+    padding: 10px;
+    font-family: "Open Sans-Regular", Helvetica;
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: normal;
+    text-align: justify;
+    overflow-y: scroll;
+    resize: none;
+}
+
+.register-lands .text-wrapper-6 {
+    position: absolute;
+    font-family: "Open Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+    top: 390px;
+    /* Adjust the top position to match "Jurusan/Kelas" */
+    left: 120px;
+}
+
+.register-lands .input-field-5 {
+    height: 20px;
+    top: 342px;
+    /* Adjust the top position to move it below "Jurusan/Kelas" */
+    left: 120px;
+    position: absolute;
+    width: 446px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: 1px solid;
+    border-color: #cfd4dc;
+    padding: 10px;
+    font-family: "Open Sans-Regular", Helvetica;
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.register-lands .text-wrapper-7 {
+    position: absolute;
+    font-family: "Open Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+    top: 314px;
+    /* Adjust the top position to match "Jurusan/Kelas" */
+    left: 120px;
+}
+
+.register-lands .input-field-6 {
+    height: 20px;
+    top: 188px;
+    left: 640px;
+    position: absolute;
+    width: 446px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: 1px solid;
+    border-color: #cfd4dc;
+    padding: 10px;
+    /* Tambahkan padding untuk memberikan ruang di dalam input fields */
+    font-family: "Open Sans-Regular", Helvetica;
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.register-lands .text-wrapper-8 {
+    position: absolute;
+    font-family: "Open Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+    top: 160px;
+    left: 640px;
+}
+
+.register-lands .input-field-7 {
+    height: 20px;
+    top: 265px;
+    left: 640px;
+    position: absolute;
+    width: 446px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: 1px solid;
+    border-color: #cfd4dc;
+    padding: 10px;
+    /* Tambahkan padding untuk memberikan ruang di dalam input fields */
+    font-family: "Open Sans-Regular", Helvetica;
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.register-lands .text-wrapper-9 {
+    position: absolute;
+    font-family: "Open Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+    top: 237px;
+    left: 640px;
+}
+
+.register-lands .input-field-8 {
+    height: 20px;
+    top: 342px;
+    left: 640px;
+    position: absolute;
+    width: 446px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: 1px solid;
+    border-color: #cfd4dc;
+    padding: 10px;
+    font-family: "Open Sans-Regular", Helvetica;
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.register-lands .text-wrapper-10 {
+    position: absolute;
+    font-family: "Open Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+    top: 314px;
+    left: 640px;
+}
+.signin-link {
+    text-align: center;
+    font-family: "Open Sans-Bold", Helvetica;
+    margin-top: 590px;
+}
+
+.signin-link a {
+    font: inherit;
+    color: rgb(32, 33, 36);
+    text-decoration: none;
+    border-bottom: 1px solid rgb(32, 33, 36);
+    padding: 0 5px;
+}
+
+.signin-link a:hover {
+    border-color: #919294;
+}

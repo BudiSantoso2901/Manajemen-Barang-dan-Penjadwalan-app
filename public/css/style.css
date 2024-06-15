@@ -1,0 +1,136 @@
+.login-pop-up {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.login-pop-up .div {
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: 1px solid;
+    border-color: #b9b9b9;
+    box-shadow: 0px 4px 4px #0000001a;
+    overflow-x: hidden;
+    width: 731px;
+    height: 716px;
+    position: relative;
+    top: 5px;
+}
+
+.login-pop-up .overlap-group {
+    position: absolute;
+    width: 561px;
+    height: 379px;
+    top: 271px;
+    left: 85px;
+    background-color: #f2f3f6;
+    border-radius: 8px;
+}
+
+.login-pop-up .text-wrapper {
+    position: absolute;
+    width: 144px;
+    top: 90px;
+    left: 59px;
+    font-family: "Open Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.login-pop-up .text-wrapper-2 {
+    position: absolute;
+    width: 84px;
+    top: 180px;
+    left: 59px;
+    font-family: "Open Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.login-pop-up .rectangle {
+    top: 117px;
+    position: absolute;
+    width: 446px;
+    margin-top: 2px;
+    padding-left: 12px;
+    height: 43px;
+    left: 59px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: 1px solid;
+    border-color: #cfd4dc;
+}
+
+.login-pop-up .rectangle-2 {
+    top: 205px;
+    position: absolute;
+    width: 446px;
+    padding-left: 12px;
+    height: 43px;
+    left: 59px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: 1px solid;
+    border-color: #cfd4dc;
+}
+
+.login-pop-up .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 10px 16px;
+    position: absolute;
+    top: 293px;
+    left: 242px;
+    background-color: #365895;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0px 4px 4px #00000014;
+    font-family: "Open Sans-Bold", Helvetica;
+    font-weight: 700;
+    color: #fefefefe;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: normal;
+    border: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.login-pop-up .button:hover {
+    background-color: #243a63;
+    color: #fff;
+}
+
+.login-pop-up .button:active {
+    opacity: 0.7;
+}
+
+.login-pop-up .text-wrapper-3 {
+    position: absolute;
+    top: 25px;
+    left: 233px;
+    font-family: "Open Sans-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 36px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.login-pop-up .mcp-logo {
+    position: absolute;
+    width: 200px;
+    height: 133px;
+    top: 78px;
+    left: 266px;
+    object-fit: cover;
+}
