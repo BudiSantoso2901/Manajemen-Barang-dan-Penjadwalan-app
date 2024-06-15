@@ -1,5 +1,4 @@
-@extends('_layouts.main')
-
+@extends('_Layouts.main')
 @section('content')
     <div class="col-11 mx-auto mb-5 border overflow-hidden"
         style="background-color: rgb(255, 255, 255); font-size: 13px; margin-top: 125px; border-radius: 10px">
