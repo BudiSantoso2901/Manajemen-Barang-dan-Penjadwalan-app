@@ -22,7 +22,7 @@ class AdminController extends Controller
     }
     public function create()
     {
-        return view('admin.form.anggota');
+        return view('Admin.form.anggota');
     }
     public function createAnggota(Request $request)
     {
@@ -198,7 +198,7 @@ class AdminController extends Controller
     public function view_jadwal()
     {
         $jadwals = jadwal::with(['barangs', 'users'])->get();
-        return view('Admin.jadwal', compact('jadwals'));
+        return view('Admin.Jadwal', compact('jadwals'));
     }
 
     public function view_add_jadwal()
