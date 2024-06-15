@@ -26,7 +26,7 @@ class jadwal extends Model
     ];
     public function barangs()
     {
-        return $this->belongsToMany(Barang::class, 'jadwal_barang')->withTimestamps();
+        return $this->belongsToMany(barang::class, 'jadwal_barang')->withTimestamps();
     }
 
     public function users()

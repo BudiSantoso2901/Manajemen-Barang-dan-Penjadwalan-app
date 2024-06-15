@@ -72,6 +72,6 @@ class User extends Authenticatable
     // }
     public function jadwals()
     {
-        return $this->belongsToMany(Jadwal::class, 'jadwal_user');
+        return $this->belongsToMany(jadwal::class, 'jadwal_user');
     }
 }

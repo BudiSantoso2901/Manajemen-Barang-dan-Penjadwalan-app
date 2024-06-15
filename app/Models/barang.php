@@ -23,6 +23,6 @@ class barang extends Model
     // }
     public function jadwals()
     {
-        return $this->belongsToMany(Jadwal::class, 'jadwal_barang');
+        return $this->belongsToMany(jadwal::class, 'jadwal_barang');
     }
 }
