@@ -48,27 +48,6 @@
                     <li class="nav-item"><a class="nav-link" href="{{ route('login') }}">Log In</a></li>
                 </ul>
             @else
-                <!-- User -->
-                {{-- <div class="btn-group">
-                    <button type="button" class="btn btn-outline-light dropdown-toggle" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-person-circle" viewBox="0 0 16 16">
-                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"></path>
-                            <path fill-rule="evenodd"
-                                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1">
-                            </path>
-                        </svg>
-                        Profile
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">{{ Auth::user()->nama }}</a></li>
-                        <li><a class="dropdown-item" href="{{ route('profile.view') }}">Profile</a></li>
-                        <li><a class="dropdown-item" href="{{ url('user/process-logout') }}">Logout</a></li>
-                    </ul>
-                </div>
-                <img src="{{ asset('storage/' . auth()->user()->profile_picture) }}" class="rounded-circle" style="width: 100px;"
-                    alt="Avatar" /> --}}
                 <li class="nav-item navbar-dropdown dropdown-user dropdown">
                     <a class="nav-link dropdown-toggle hide-arrow" href="" data-bs-toggle="dropdown">
                         <div class="avatar avatar-online">
