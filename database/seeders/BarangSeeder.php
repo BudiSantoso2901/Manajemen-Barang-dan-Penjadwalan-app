@@ -34,7 +34,31 @@ class BarangSeeder extends Seeder
                 'nama_barang' => 'Tripod',
                 'tanggal_beli' => '2023-02-20',
                 'kondisi_barang' => 'Baru',
-                'jumlah_unit' => 10,
+                'jumlah_unit' => 4,
+            ],
+            [
+                'nama_barang' => 'Proyektor Dan Kabel HDMI',
+                'tanggal_beli' => '2024-04-20',
+                'kondisi_barang' => 'Baru',
+                'jumlah_unit' => 2,
+            ],
+            [
+                'nama_barang' => 'Memory Camera 64 Gb',
+                'tanggal_beli' => '2024-02-20',
+                'kondisi_barang' => 'Baru',
+                'jumlah_unit' => 5,
+            ],
+            [
+                'nama_barang' => 'Lighting Studio',
+                'tanggal_beli' => '2024-02-20',
+                'kondisi_barang' => 'Baru',
+                'jumlah_unit' => 2,
+            ],
+            [
+                'nama_barang' => 'Microphone Rode Dynamic box',
+                'tanggal_beli' => '2023-02-20',
+                'kondisi_barang' => 'Baru',
+                'jumlah_unit' => 2,
             ],
 
         ];
